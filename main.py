@@ -550,4 +550,4 @@ async def solve(ctx, equation):
   await ctx.send(f"The solution to the equation is {solution}.")
 
 # RUN THE BOT
-bot.run('OTM0Mjk2MzcyMDkyNDkzODQ1.GxEdYZ.cMfGB4zS52tU634gNDnAG3a3tIls_MSIo9q2BE')
+bot.run(bot.run(os.environ['TOKEN']))
