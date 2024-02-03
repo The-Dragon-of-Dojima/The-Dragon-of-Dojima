@@ -123,8 +123,8 @@ async def yakuzafans(interaction: discord.Interaction):
 async def yakuzafans1(ctx):
   await ctx.send(file=discord.File('Yakuza fans be like.mp4'))
 @bot.command(name="chinese", description="The battle of the chinese man")
-async def chinese(ctx):
-  await ctx.send(file=discord.File('nice_QTE.mp4'))
+async def chinese(interaction: discord.Interaction):
+  await interaction.response.send_message(file=discord.File('nice_QTE.mp4'))
 @bot.tree.command(name="insanity", description="Show's a video of kiryu beating up koji shindo. PS: This has an alternative version: l!insanity")
 async def insanity(interaction: discord.Interaction):
   await interaction.response.send_message(file=discord.File('70431F28-2785-498B-8CF8-2FEFA415F355_2.mov'))
