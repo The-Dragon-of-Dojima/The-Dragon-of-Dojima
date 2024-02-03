@@ -122,6 +122,9 @@ async def yakuzafans(interaction: discord.Interaction):
 @bot.command(name="yakuzafans", description="PS: This has an alternative version: l!yakuzafans")
 async def yakuzafans1(ctx):
   await ctx.send(file=discord.File('Yakuza fans be like.mp4'))
+@bot.command(name="chinese", description="The battle of the chinese man")
+async def chinese(ctx):
+  await ctx.send(file=discord.File('nice_QTE.mp4'))
 @bot.tree.command(name="insanity", description="Show's a video of kiryu beating up koji shindo. PS: This has an alternative version: l!insanity")
 async def insanity(interaction: discord.Interaction):
   await interaction.response.send_message(file=discord.File('70431F28-2785-498B-8CF8-2FEFA415F355_2.mov'))
@@ -142,17 +145,17 @@ async def disagree(interaction: discord.Interaction):
 @bot.tree.command(name="chinese", description="The battle of the chinese man")
 async def chinese(interaction: discord.Interaction):
 
-  await interaction.response.send_message(file=discord.File('nice QTE.mp4'))
+  await interaction.response.send_message(file=discord.File('nice_QTE.mp4'))
 
 @bot.tree.command(name="kiryuchan", description="A compilation of majima saying ''Kiryu Chan''")
 async def kiryuchan(interaction: discord.Interaction):
 
-  await interaction.response.send_message(file=discord.File('Every Kiryu Chan Ever.mp4'))
+  await interaction.response.send_message(file=discord.File('ekc.mp4'))
 
 @bot.tree.command(name="kiryuprowler", description="Kiryu doesn't approve of you.")
 async def kiryuprowler(interaction: discord.Interaction):
 
-  await interaction.response.send_message(file=discord.File('Kiryu Prowler meme.mp4'))
+  await interaction.response.send_message(file=discord.File('Kiryu_Prowler_meme.mp4'))
 
 @bot.tree.command(name="widekiryu", description="Show's a video of wide kiryu")
 async def widekiryu(interaction: discord.Interaction):
@@ -168,10 +171,6 @@ async def babyrocky(interaction: discord.Interaction):
 async def n_word(interaction: discord.Interaction):
 
   await interaction.response.send_message(file=discord.File('IM_SAYING_THE_N_WORD.mp4'))
-@bot.tree.command(name="say", description="Let's the bot say anything and I mean anything... anonymously without anyone knowing.")
-async def say(interaction: discord.Interaction):
-
-  await interaction.response.send_message()
 ##################### [[ Commands ]] #####################
 
 @bot.command()
@@ -326,7 +325,7 @@ async def dad(ctx):
   await ctx.send("You ugly ass, you don't have a dad, your dad left you, and you know that, you dumbass")
 @bot.command()
 async def kiryuprowler(ctx):
-  await ctx.send(file=discord.File('Kiryu Prowler meme.mp4'))
+  await ctx.send(file=discord.File("Kiryu_Prowler_meme.mp4"))
 @bot.command()
 async def gun(ctx):
   await ctx.send(file=discord.File('gun.mov'))
@@ -481,7 +480,7 @@ async def slowmode(ctx, channel: discord.TextChannel, message_per_second: int):
 
 @bot.command()
 async def yakuzillionaire(ctx):
-    await ctx.send(file=discord.File('YAKUZA 4 REMASTERED INTRO DUBBED PARODY ft. The Yakuza 4.mp4'))
+    await ctx.send(file=discord.File('y4_rem'))
 
 @bot.command()
 async def yakuza_fans(ctx):
@@ -551,4 +550,4 @@ async def solve(ctx, equation):
   await ctx.send(f"The solution to the equation is {solution}.")
 
 # RUN THE BOT
-bot.run(bot.run(os.environ['TOKEN']))
+bot.run('OTM0Mjk2MzcyMDkyNDkzODQ1.GxEdYZ.cMfGB4zS52tU634gNDnAG3a3tIls_MSIo9q2BE')
